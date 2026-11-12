@@ -1,0 +1,12 @@
+{
+  "name": "source-first-scraper",
+  "version": "0.1.0",
+  "description": "A scraper that tries the cheapest data source first and only opens a browser as a last resort.",
+  "type": "module",
+  "scripts": {
+    "scrape": "bun run src/cli.ts",
+    "scrape:all": "bun run src/cli.ts --all"
+  },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.6.0" },
+  "optionalDependencies": { "playwright": "^1.48.0" }
+}

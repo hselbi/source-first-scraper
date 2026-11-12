@@ -1,0 +1,20 @@
+{
+  "id": "quotes-toscrape",
+  "baseUrl": "https://quotes.toscrape.com",
+  "jsonApi": {
+    "url": "https://quotes.toscrape.com/api/quotes?page=1",
+    "itemsPath": "quotes",
+    "map": {
+      "title": "text"
+    }
+  },
+  "expectMinItems": 5,
+  "html": {
+    "listUrl": "https://quotes.toscrape.com",
+    "item": "div.quote",
+    "title": "span.text"
+  },
+  "requiredFields": [
+    "title"
+  ]
+}

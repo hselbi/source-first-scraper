@@ -1,0 +1,15 @@
+{
+  "id": "books-toscrape",
+  "baseUrl": "https://books.toscrape.com",
+  "expectMinItems": 10,
+  "html": {
+    "listUrl": "https://books.toscrape.com/catalogue/page-1.html",
+    "item": "article.product_pod",
+    "title": "h3 a",
+    "price": "p.price_color"
+  },
+  "requiredFields": [
+    "title",
+    "url"
+  ]
+}
